@@ -6,7 +6,7 @@ import zigzag as zz
 import data_embedding as stego
 import image_preparation   as img
 
-stego_image     = cv2.imread("./stego_image.jpg", flags=cv2.IMREAD_COLOR)
+stego_image     = cv2.imread("./res/stego_image.jpg", flags=cv2.IMREAD_COLOR)
 stego_image_f32 = np.float32(stego_image)
 stego_image_YCC = img.YCC_Image(cv2.cvtColor(stego_image_f32, cv2.COLOR_BGR2YCrCb))
 
